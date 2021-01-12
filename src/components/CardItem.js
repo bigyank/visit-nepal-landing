@@ -5,7 +5,13 @@ function CardItem(props) {
   return (
     <>
       <li className="cards__item">
-        <Link className="cards__item__link" to={props.path}>
+        <Link
+          className="cards__item__link"
+          to={{
+            pathname: "https://app.vnepal.me",
+          }}
+          target="_blank"
+        >
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img className="cards__item__img" alt="Travel" src={props.src} />
           </figure>

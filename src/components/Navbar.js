@@ -37,14 +37,24 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to={{
+                  pathname: "https://app.vnepal.me/login",
+                }}
+                target="_blank"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Login
               </Link>
             </li>
 
             <li>
               <Link
-                to="/sign-up"
+                to={{
+                  pathname: "https://app.vnepal.me/signup",
+                }}
+                target="_blank"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
