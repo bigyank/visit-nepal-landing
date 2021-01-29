@@ -36,33 +36,20 @@ function Navbar() {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link
-                to={{
-                  pathname: "https://app.vnepal.me/login",
-                }}
-                target="_blank"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Login
-              </Link>
-            </li>
-
             <li>
               <Link
                 to={{
-                  pathname: "https://app.vnepal.me/signup",
+                  pathname: "https://app.vnepal.me",
                 }}
                 target="_blank"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Launch App
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">Launch App</Button>}
         </div>
       </nav>
     </>
